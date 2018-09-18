@@ -1,0 +1,41 @@
+{
+  "name": "postcss-webpack-starter",
+  "version": "1.0.0",
+  "description": "A webpack boilerplate with configured PostCSS",
+  "keywords": [
+    "postcss",
+    "css",
+    "sass",
+    "webpack"
+  ],
+  "main": "src/pcss/main.pcss",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js  --progress --profile --color --display-error-details --display-cached --bail",
+    "watch": "cross-env NODE_ENV=development webpack --config ./webpack.config.js --inline --progress --watch --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/txantslusam/PostCSS-webpack-starter.git"
+  },
+  "author": "Mateusz Tomkowiak <matixnt1@windowslive.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.1.0",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "postcss-advanced-variables": "^2.3.3",
+    "postcss-atroot": "^0.1.3",
+    "postcss-extend-rule": "^2.0.0",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^4.1.0",
+    "postcss-preset-env": "^5.3.0",
+    "postcss-property-lookup": "^2.0.0",
+    "postcss-url": "^8.0.0",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0"
+  }
+}
